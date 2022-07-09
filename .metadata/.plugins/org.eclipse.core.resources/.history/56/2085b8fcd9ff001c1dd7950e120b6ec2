@@ -1,0 +1,14 @@
+
+public class testeszinhos {
+
+	public static void main(String[] args) {
+		Calendario calendario = new Calendario();
+		//calendario.MarcarEvento("aniversario de namoro");
+		agendaContatos agenda = new agendaContatos();
+		
+		agenda.addContato("cabinha", 2939392);
+		agenda.mandarMsg("te amor", "cabinha");
+
+	}
+
+}

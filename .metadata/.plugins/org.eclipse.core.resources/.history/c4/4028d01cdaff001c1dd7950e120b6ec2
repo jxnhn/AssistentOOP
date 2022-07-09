@@ -1,0 +1,12 @@
+
+public class testeszinhos {
+
+	public static void main(String[] args) {
+		Calendario calendario = new Calendario();
+		calendario.MarcarEvento("aniversario de namoro");
+		calendario.mostrarEventos();
+		calendario.desmarcarEvento("aniversario de namoro");
+		
+	}
+
+}

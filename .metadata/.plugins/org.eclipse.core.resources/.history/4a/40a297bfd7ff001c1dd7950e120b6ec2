@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Calendario implements MarcadordeEventos{
+	
+	List<Data> eventos = new ArrayList<Data>();
+	
+	@Override
+	public void MarcarEvento(String nome) {
+		Data data = new Data();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Digite o ano");
+		data.setAno(scanner.nextInt());
+		System.out.println("Digite o mês");
+		data.setMes(scanner.nextInt());
+		System.out.println("Digite o dia");
+		data.setDia(scanner.nextInt());
+		
+		eventos.add(data);
+		System.out.println("O evento "+ nome+" foi marcado para o dia " +data.getDia()+"/"+data.getMes()+"/"+data.getAno());
+}
+	@Override
+	public void desmarcarEvento() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void mostrarEventos() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,51 @@
+ import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class agendaContatos implements Agenda{
+	
+	
+	
+	List<Contato> agenda = new ArrayList<Contato>();
+	
+
+	@Override
+	public void addContato(String nome, int numero) {
+		Contato contato = new Contato();
+		
+		contato.setNome(nome);
+		contato.setNumero(numero);
+		agenda.add(contato);
+		System.out.println(agenda.get(0).getNome());
+		
+	}
+
+	@Override
+	public void mandarMsg(String msg) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Para quem você quer mandar a mensagem?");
+		String destinatario = scanner.nextLine();
+		for(int i = 0; i < agenda.size(); i++) {
+			if(agenda.get(i).getNome() != null) {
+				if(agenda.get(0).getNome() == destinatario) {
+					System.out.println("a seguinte mensagem foi enviada para "+destinatario+": "+ msg);
+				}
+				else {
+					System.out.println("contato nao encontrado");
+				}
+			}
+		}
+		
+		
+	}
+
+	@Override
+	public void removerContato(String nome) {
+		int i = 0;
+		while (agenda.get(i).getNome() == nome) {
+			agenda.remove(i);
+		}
+		i++;
+	}
+
+}
