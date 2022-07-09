@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/joao/Área de Trabalho/Assistente/.metadata/.plugins/org.eclipse.jdt.core
+258585374.index
+1134180200.index
+1865797976.index
