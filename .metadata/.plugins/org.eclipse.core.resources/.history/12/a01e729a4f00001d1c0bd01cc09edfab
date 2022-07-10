@@ -1,0 +1,16 @@
+
+public class Som extends Config {
+
+	@Override
+	public void aumentar(int level) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void diminuir(int level) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

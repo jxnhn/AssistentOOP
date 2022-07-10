@@ -1,0 +1,9 @@
+
+public class mainn {
+
+	public static void main(String[] args) {
+		Som configuracoes = new Som();
+		configuracoes.aumentar(50);
+	}
+
+}

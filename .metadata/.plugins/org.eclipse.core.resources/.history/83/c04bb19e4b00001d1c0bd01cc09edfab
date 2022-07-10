@@ -1,0 +1,15 @@
+
+public class tester {
+
+	public static void main(String[] args) {
+		Alarme alarme = new Alarme();
+		
+		alarme.definirAlarme(22, 54);
+		alarme.definirAlarme(14, 30);
+		alarme.definirAlarme(13, 17);
+		alarme.Operacoes();
+		alarme.Operacoes();
+
+	}
+
+}
