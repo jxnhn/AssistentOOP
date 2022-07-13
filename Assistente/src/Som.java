@@ -6,14 +6,14 @@ public class Som extends Config {
 	@Override
 	public void aumentar(int level) {
 		som += level;
-		System.out.println("Aumentando o Som para " + som);
+		System.out.println("Aumentando o Som para: " + som);
 		
 	}
 
 	@Override
 	public void diminuir(int level) {
 		som -= level;
-		System.out.println("Diminuindo o som para " +som);
+		System.out.println("Diminuindo o som para: " +som);
 	}
 		
 		

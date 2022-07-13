@@ -17,6 +17,7 @@ public class agendaContatos implements Agenda{
 		contato.setNome(nome);
 		contato.setNumero(numero);
 		agenda.add(contato);
+		System.out.println("contato adicionado.");
 		
 		
 	}

@@ -1,0 +1,11 @@
+public class main {
+
+	public static void main(String[] args) {
+		Alarme alarme = new Alarme();
+		alarme.definirAlarme(23, 45);
+		alarme.definirAlarme(14, 21);
+		alarme.Operacoes();
+		alarme.Operacoes();
+	}
+
+}
